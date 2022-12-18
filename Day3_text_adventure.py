@@ -59,6 +59,7 @@ def scene3():
                    "fishing traps for the day. You step into the house, and see all manner\n"
                    "of colorful concoctions in the kitchen. Which color do you try: 'blue',\n"
                    "'red', or 'yellow'?\n")
+    potion = potion.lower()
     if potion == 'yellow':
         end(3)
     elif potion == 'red':
@@ -71,6 +72,7 @@ def scene2():
                   "inhabited. At the very least you can see smoke from a chimney and a\n"
                   "boat on the water. You can try to swim to the island or wait for the\n"
                   "boatman to notice you. Do you 'wait' or 'swim'?\n")
+    water = water.lower()
     if water == "wait":
         scene3()
     else:
@@ -80,7 +82,7 @@ def scene1():
                   "to the crew that dropped you off. To your left is a forested \n"
                   "area. To your right, the shoreline stretches into the distance. \n"
                   "Will you go 'left' or 'right'?\n")
-
+    direction = direction.lower()
     if direction == "left":
         scene2()
     else:
