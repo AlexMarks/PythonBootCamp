@@ -21,7 +21,6 @@ for i in range(nr_symbols):
 
 random.shuffle(order)
 for o in order:
-    p = random.randint(0,len(chars[o])-1)
-    password = password + chars[o][p]
+    password = password + random.choice(chars[o])
 
 print("Your new password is " + password)
